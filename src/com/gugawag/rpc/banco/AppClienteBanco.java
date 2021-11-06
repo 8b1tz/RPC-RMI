@@ -26,18 +26,20 @@ public class AppClienteBanco {
 				String conta = entrada.next();
 				// chamada ao mÃ©todo remoto, como se fosse executar localmente
 				System.out.println(banco.saldo(conta));
+				break;
 
 			}
 			case 2: {
 				// chamada ao mÃ©todo remoto, como se fosse executar localmente
 				System.out.println(banco.quantidadeContas());
+				break;
 
 			}
 			case 3: {
 				System.out.println("Digite o número da conta que você deseja: ");
 				String num = entrada.next();
 				System.out.println(banco.cadastroConta(num, 100.0));
-
+				break;
 			}
 			}
 			menu();
